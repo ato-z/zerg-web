@@ -1,0 +1,35 @@
+{
+  "name": "dmzj-web",
+  "version": "1.0.0",
+  "description": "动漫之家web版",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./scripts/dev.js",
+    "build": "webpack build --mode production",
+    "dev1": "webpack server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@swc/core": "^1.2.196",
+    "autoprefixer": "^10.4.7",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "postcss-loader": "^7.0.0",
+    "postcss-nested": "^5.0.6",
+    "shelljs": "^0.8.5",
+    "style-loader": "^3.3.1",
+    "swc-loader": "^0.2.1",
+    "typescript": "^4.7.2",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 version"
+  ]
+}

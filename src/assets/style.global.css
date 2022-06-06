@@ -1,0 +1,66 @@
+html {
+    --col1: #0090ff;
+    --col2: #636165;
+    --bgCol1: #0c95f5;
+    --bgCol2: #ffaa17;
+    --maxWidth: 750px;
+    --headerHeight: 50px;
+    --h1Size: .4rem;
+    --h2Size: .36rem;
+    --h3Size: .32rem;
+    --h4Size: .28rem;
+    --h5Size: .24rem;
+    --h6Size: .2rem;   
+}
+body {
+    color: #000;
+    font-size: .28rem;
+}
+.page {
+    margin: auto;
+    max-width: var(--maxWidth);
+    > .header {
+        height: var(--headerHeight);
+        .fiexd-view {
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-color: #fff;
+        }
+    }
+    > .header + .body {
+        height: calc(100vh - var(--headerHeight));
+    }
+    > .body {
+        height: 100vh;
+        overflow-y: scroll;
+    }
+}
+.switch-win {
+    position: relative;
+    overflow: hidden;
+    > .view {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+        left: 100%;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -webkit-transition: .1s;
+        transition: .1s;
+    }
+    > .view.on {
+        position: relative;
+        z-index: 1;
+        visibility: visible;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: none;
+        transform: none;
+        -webkit-transition: -webkit-transform .3s, opacity .3s;
+        transition: transform .3s, opacity .3s;
+    }
+}

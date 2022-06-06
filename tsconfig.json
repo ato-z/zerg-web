@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        // 打包输出文件夹
+        "outDir": "./dist",
+
+        // 开发时模块导入的规则
+        "module": "ESNext",
+
+        // 编译输出的版本
+        "target": "ES6",
+
+        // 严格模式
+        "alwaysStrict": true,
+
+        // 不允许隐式的any
+        "noImplicitAny": true,
+
+        // 严格的空类型检查
+        "strictNullChecks": true,
+
+        // 不允许 this
+        "noImplicitThis":true,
+
+        // 严格的类型检查
+        "strict": true,
+
+        // 枚举
+        "preserveConstEnums": true,
+        "moduleResolution": "node",
+
+        // 源地图
+        "sourceMap": true,
+
+        // 
+        "esModuleInterop": true,
+    },
+    "include": ["./src"],
+    "exclude": ["./node_modules", "./dist", "./scripts", "*.css"]
+}
